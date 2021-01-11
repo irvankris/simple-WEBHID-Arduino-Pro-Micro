@@ -110,3 +110,7 @@ pemicu proses pengiriman data dari Arduino ke WEBHID yaitu dengan membuat kondis
 <p align="center">
   <img src="img/screenshot02.png">
 </p>
+
+
+# License
+The MIT License (MIT) Copyright (c) 2021 Irvan Kristianto (irvan.kristianto@gmail.com)
