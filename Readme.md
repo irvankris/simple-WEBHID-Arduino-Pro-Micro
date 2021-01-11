@@ -63,7 +63,7 @@ dengan WEBHID tester.
 
 dari informasi-informasi di atas, saya mencoba mengembangkan ujicoba WEBHID sederhana.
 
-akses aplikasi web mengharuskan akses HTTPS, sehingga diperlukan simplehttps server. 
+API WEBHID mengharuskan akses HTTPS, sehingga diperlukan simplehttps server. 
 disini python sangat memudahkan untuk membuat web server HTTPS .
 
 ```
