@@ -1,4 +1,6 @@
-##simple WEB HID Arduino Pro Micro 
+## simple WEB HID Arduino Pro Micro 
+
+
 
 ujicoba akses WEBHID ke microcontroller Arduino Pro Micro (ATMegaU24).
 
@@ -54,7 +56,7 @@ bool IsAlwaysProtected(const mojom::HidUsageAndPage& hid_usage_and_page) {
 }
 ```
 
-lalu ada contoh berhasil dari luni, pada 
+lalu ada contoh berhasil dari luni, pada
 https://forum.pjrc.com/threads/60782-Making-WebUSB-Work-with-the-Teensy-What-is-PluggableUSB?p=249316
 
 dengan WEBHID tester.
@@ -74,14 +76,16 @@ chrome://flags/#enable-experimental-web-platform-features
 
 akses ke web ujicoba WEBHID, dengan tampilan awal :
 
-[screenshot01.png]
+
 <p align="center">
   <img src="img/screenshot01.png">
 </p>
 
 ujicoba WEBHID terdiri dari dua fungsi penting,
-yaitu await device.sendReport(outputReportId,outputReport ); untuk mengirimkan 64byte perintah ke Arduino
-
+yaitu 
+```
+await device.sendReport(outputReportId,outputReport ); untuk mengirimkan 64byte perintah ke Arduino
+```
 dan
 ```
 device.oninputreport = onInputReport;
@@ -100,7 +104,7 @@ yang memproses event pengiriman data dari Arduino ke WEBHID.
 
 pemicu proses pengiriman data dari Arduino ke WEBHID yaitu dengan membuat kondisi HIGH pin nomor 9.
 
-[screenshot01.png]
+
 <p align="center">
   <img src="img/screenshot02.png">
 </p>
