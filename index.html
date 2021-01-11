@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>Hello USB-HID World!</title>
+</head>
+<body>
+	
+	<h1>WEBHID - USBHID</h1>
+	<h2>hello World</h2>
+	<br>VendorID  :
+    <input type="text" placeholder="0x04d8" id="TextVID" value="2341">
+	<br>ProductID :
+    <input type="text" placeholder="0x00dd" id="TextPID" value="8036" >
+	<br><div id="preconnect"></div>
+    <br>
+	<!-- memberikan event pada element tombol -->
+	<button id="buttonku01" >Konek ke HID</button>
+    <br>
+	<br>Hex in :
+    <input type="text" placeholder="0x00dd" id="TextHEX01" value="FF FF 1c 00" >
+    <br>	<button id="buttonku02" >Hex Command</button>
+    <br>	
+	<!-- id hasil -->
+	<div id="hasil"></div>
+    <br>
+	<div id="terima"></div>
+ 
+    <script src="webhid.js" ></script>
+
+
+</body>
+</html>
