@@ -84,8 +84,10 @@ akses ke web ujicoba WEBHID, dengan tampilan awal :
 ujicoba WEBHID terdiri dari dua fungsi penting,
 yaitu 
 ```
-await device.sendReport(outputReportId,outputReport ); untuk mengirimkan 64byte perintah ke Arduino
+await device.sendReport(outputReportId,outputReport ); 
 ```
+untuk mengirimkan 64byte perintah ke Arduino
+
 dan
 ```
 device.oninputreport = onInputReport;
